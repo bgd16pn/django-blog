@@ -1,0 +1,24 @@
+{% extends "myapp/base.html" %}
+
+{% block title %}
+	{{ post.title|capfirst }} - {{ block.super }}
+{% endblock %}
+ 
+{% block content %}
+ 
+<div class="content">
+    <div class="section-inner clearfix">
+ 
+        <h1>{{ post.title|capfirst }}</h1>
+        <p class="post-info">
+            {% include 'myapp/post_info.html' %}
+        </p>
+        <hr>
+        <p>
+            {{ post.content | safe }}
+        </p>
+ 
+    </div>
+</div>
+ 
+{% endblock %}
