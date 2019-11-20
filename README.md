@@ -1,2 +1,2 @@
-# django-blog
-Versatile application using Django REST Framework for giving up- dates on my activities with RC airplane models.
+# Personal Blog Web Application
+Versatile application using Django REST Framework for giving updates on my activities with RC airplane models.
